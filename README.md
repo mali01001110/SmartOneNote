@@ -88,7 +88,7 @@ Sous macOS :
 - Installez Wine ou CrossOver, puis lancez l'application avec la commande adaptée (par exemple `wine SmartOneNote.exe`).
 - Cela permet d'exécuter l'application comme sur Windows, sans avoir besoin de Python installé.
 
-Ou juste exécuter le fichier .py
+Ou juste exécuter le fichier .py.
 
 Fonctionnalités
 ---------------
