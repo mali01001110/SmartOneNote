@@ -61,7 +61,7 @@ Usage
 - Navigate quickly using menus and keyboard shortcuts
 - Use the application as your main or secondary text editor for simple files
 
-
+Do not hesitate to donate if you enjoy my work see "Donations" menu in app.
 
 Smart One Note v1.0
 ==============
@@ -124,3 +124,5 @@ Utilisation
 - Travailler sur plusieurs onglets simultanément pour comparer ou éditer différents fichiers
 - Personnaliser l'apparence du texte selon vos besoins (rouge, vert, bleu, blanc)
 - Naviguer rapidement grâce aux menus et aux raccourcis clavier
+
+N'hésitez pas a faire un don si vous appreciez mon travail voyez le menu "Donations dans l'app.
