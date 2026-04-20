@@ -1,4 +1,67 @@
 Smart One Note v1.0
+===================
+
+Description
+-----------
+Smart One Note is a standalone text editor application written in Python with Tkinter.
+It allows you to open, edit, and save text files in a multi-tab interface.
+The application uses a dark theme and provides keyboard shortcuts for file management and text styling.
+
+Installation
+------------
+On Windows:
+- Simply launch the SmartOneNote.exe file by double-clicking.
+
+On Linux:
+- If your distribution supports running .exe files, you can use Wine or Proton.
+- With Wine: install Wine and run the application using the command `wine SmartOneNote.exe`.
+- With Proton (commonly used with Steam): configure Proton to run Windows applications and add SmartOneNote.exe as an external program.
+
+On macOS:
+- macOS does not natively support .exe files.
+- You can use Wine for macOS or solutions like CrossOver.
+- Install Wine or CrossOver, then run the application with the appropriate command (for example `wine SmartOneNote.exe`).
+- This allows you to run the application as on Windows, without needing Python installed.
+
+Features
+--------
+- Dark theme interface
+- Multi-tab support to work on several files at once
+- Open, save, and save-as text files
+- Custom icon (black_pen.png)
+- Change text color with keyboard shortcuts
+- Simple menus to manage files, create tabs, and modify text style
+
+Keyboard Shortcuts
+------------------
+Ctrl+N : New tab
+Ctrl+O : Open file
+Ctrl+S : Save
+Ctrl+Shift+S : Save As
+Ctrl+Q : Quit
+F1 : Red text
+F2 : Green text
+F3 : Blue text
+F4 : White text
+
+Usage
+-----
+- Launch the application by running SmartOneNote.exe
+- Create a new tab using the Tab menu or Ctrl+N
+- Open a text file using File > Open or Ctrl+O
+- Edit the content directly in the text area
+- Save the file using File > Save or Ctrl+S
+- Save under a new name using File > Save As or Ctrl+Shift+S
+- Quit the application using File > Quit or Ctrl+Q
+- Change text color using the Style menu or F1 to F4
+- Work with multiple tabs at the same time to compare or edit different files
+- Customize text appearance as needed (red, green, blue, white)
+- Navigate quickly using menus and keyboard shortcuts
+- Use the application as your main or secondary text editor for simple files
+
+
+
+Smart One Note v1.0
 ==============
 
 Description
