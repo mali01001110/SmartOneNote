@@ -55,7 +55,7 @@ Smart One Note v1.0
 
 Description
 -----------
-Smart One Note est une application éditeur de texte écrite en Python avec Tkinter.
+Smart One Note est une application standalone d'édition de texte écrite en Python avec Tkinter.
 Elle permet d'ouvrir, éditer et sauvegarder des fichiers texte dans une interface multi-onglets.
 L'application utilise un thème sombre et propose des raccourcis clavier pour la gestion des fichiers et le style du texte.
 
