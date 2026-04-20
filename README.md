@@ -60,6 +60,7 @@ Usage
 - Customize text appearance as needed (red, green, blue, white)
 - Navigate quickly using menus and keyboard shortcuts
 - Use the application as your main or secondary text editor for simple files
+- Close current tab with right-click then close tab
 
 Do not hesitate to donate if you enjoy my work see "Donations" menu in app.
 
@@ -122,6 +123,7 @@ Utilisation
 - Fermer l'application avec File > Quit ou Ctrl+Q
 - Changer la couleur du texte avec le menu Style ou les touches F1 à F4
 - Travailler sur plusieurs onglets simultanément pour comparer ou éditer différents fichiers
+- Fermer l'onglet en cours avec clic-droit puis close tab
 - Personnaliser l'apparence du texte selon vos besoins (rouge, vert, bleu, blanc)
 - Naviguer rapidement grâce aux menus et aux raccourcis clavier
 
