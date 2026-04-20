@@ -23,6 +23,8 @@ On macOS:
 - Install Wine or CrossOver, then run the application with the appropriate command (for example `wine SmartOneNote.exe`).
 - This allows you to run the application as on Windows, without needing Python installed.
 
+Or just run the .py file.
+
 Features
 --------
 - Dark theme interface
@@ -85,6 +87,8 @@ Sous macOS :
 - Vous pouvez utiliser Wine pour macOS ou des solutions comme CrossOver.
 - Installez Wine ou CrossOver, puis lancez l'application avec la commande adaptée (par exemple `wine SmartOneNote.exe`).
 - Cela permet d'exécuter l'application comme sur Windows, sans avoir besoin de Python installé.
+
+Ou juste exécuter le fichier .py
 
 Fonctionnalités
 ---------------
