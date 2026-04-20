@@ -1,4 +1,4 @@
-Smart One Note
+Smart One Note v1.0
 ==============
 
 Description
