@@ -9,21 +9,7 @@ The application uses a dark theme and provides keyboard shortcuts for file manag
 
 Installation
 ------------
-On Windows:
-- Simply launch the SmartOneNote.exe file by double-clicking.
-
-On Linux:
-- If your distribution supports running .exe files, you can use Wine or Proton.
-- With Wine: install Wine and run the application using the command `wine SmartOneNote.exe`.
-- With Proton (commonly used with Steam): configure Proton to run Windows applications and add SmartOneNote.exe as an external program.
-
-On macOS:
-- macOS does not natively support .exe files.
-- You can use Wine for macOS or solutions like CrossOver.
-- Install Wine or CrossOver, then run the application with the appropriate command (for example `wine SmartOneNote.exe`).
-- This allows you to run the application as on Windows, without needing Python installed.
-
-Or just run the .py file.
+Just run the .py file
 
 Features
 --------
@@ -75,21 +61,7 @@ L'application utilise un thème sombre et propose des raccourcis clavier pour la
 
 Installation
 ------------
-Sous Windows :
-- Lancez simplement le fichier SmartOneNote.exe par double-clic.
-
-Sous Linux :
-- Si votre distribution supporte l'exécution des fichiers .exe, vous pouvez utiliser Wine ou Proton.
-- Avec Wine : installez Wine puis lancez l'application avec la commande `wine SmartOneNote.exe`.
-- Avec Proton (souvent utilisé avec Steam) : configurez Proton pour exécuter des applications Windows et ajoutez SmartOneNote.exe comme programme externe.
-
-Sous macOS :
-- macOS ne supporte pas directement les fichiers .exe.
-- Vous pouvez utiliser Wine pour macOS ou des solutions comme CrossOver.
-- Installez Wine ou CrossOver, puis lancez l'application avec la commande adaptée (par exemple `wine SmartOneNote.exe`).
-- Cela permet d'exécuter l'application comme sur Windows, sans avoir besoin de Python installé.
-
-Ou juste exécuter le fichier .py.
+Juste exécuter le fichier .py
 
 Fonctionnalités
 ---------------
