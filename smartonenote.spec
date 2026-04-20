@@ -5,7 +5,7 @@ a = Analysis(
     ['smartonenote.py'],
     pathex=[],
     binaries=[],
-    datas=[('black_pen.png', '.')],
+    datas=[('black_pen.png', '.'), ('orange_money.png', '.'), ('wave_money.png', '.'), ('taptapsend.png', '.'), ('contact_info.png', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
