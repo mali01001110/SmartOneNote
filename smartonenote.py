@@ -47,7 +47,13 @@ class SmartOneNote(tk.Tk):
         style_menu.add_command(label="Green (F2)", command=lambda: self.change_text_color("green"))
         style_menu.add_command(label="Blue (F3)", command=lambda: self.change_text_color("blue"))
         style_menu.add_command(label="White (F4)", command=lambda: self.change_text_color("white"))
+        style_menu.add_command(label="Black (F5)", command=lambda: self.change_text_color("black"))
         menu_bar.add_cascade(label="Style", menu=style_menu)
+
+        background_menu = tk.Menu(menu_bar, tearoff=0, bg="black", fg="white")
+        background_menu.add_command(label="Black", command=lambda: self.change_bg_color("black"))
+        background_menu.add_command(label="White", command=lambda: self.change_bg_color("white"))
+        menu_bar.add_cascade(label="Background", menu=background_menu)
 
         donation_menu = tk.Menu(menu_bar, tearoff=0, bg="black", fg="white")
         donation_menu.add_command(label="Dons Orange Money (Alt+1)",
@@ -79,6 +85,7 @@ class SmartOneNote(tk.Tk):
         self.bind_all("<F2>", lambda e: self.change_text_color("green"))
         self.bind_all("<F3>", lambda e: self.change_text_color("blue"))
         self.bind_all("<F4>", lambda e: self.change_text_color("white"))
+        self.bind_all("<F5>", lambda e: self.change_text_color("black"))
 
         self.bind_all("<Alt-1>", lambda e: self.show_donation_image("orange_money.png", "Orange Money"))
         self.bind_all("<Alt-2>", lambda e: self.show_donation_image("wave_money.png", "Wave Mobile Money"))
@@ -104,8 +111,9 @@ class SmartOneNote(tk.Tk):
         return self.notebook.nametowidget(current_tab).text_area
 
     def new_tab(self, title="", content="", file_path=None):
-        frame = tk.Frame(self.notebook, bg="black")
-        text_area = tk.Text(frame, wrap="word", bg="black", fg="white", insertbackground="white")
+        current_bg = self.cget("bg")
+        frame = tk.Frame(self.notebook, bg=current_bg)
+        text_area = tk.Text(frame, wrap="word", bg=current_bg, fg="white", insertbackground="white")
         text_area.pack(expand=1, fill="both")
         text_area.insert(tk.END, content)
         frame.text_area = text_area
@@ -135,15 +143,16 @@ class SmartOneNote(tk.Tk):
         self.tab_context_menu.tk_popup(event.x_root, event.y_root)
 
     def show_donation_image(self, image_filename, title):
-        frame = tk.Frame(self.notebook, bg="black")
+        current_bg = self.cget("bg")
+        frame = tk.Frame(self.notebook, bg=current_bg)
         image_path = resource_path(image_filename)
         if os.path.exists(image_path):
             img = tk.PhotoImage(file=image_path)
-            label = tk.Label(frame, image=img, bg="black")
+            label = tk.Label(frame, image=img, bg=current_bg)
             label.image = img
             label.pack(expand=1, fill="both")
         else:
-            label = tk.Label(frame, text=f"Image not found: {image_filename}", fg="white", bg="black")
+            label = tk.Label(frame, text=f"Image not found: {image_filename}", fg="white", bg=current_bg)
             label.pack(expand=1, fill="both")
         self.notebook.add(frame, text=title)
         self.notebook.select(frame)
@@ -179,6 +188,17 @@ class SmartOneNote(tk.Tk):
     def change_text_color(self, color):
         text_area = self.current_text_area()
         text_area.config(fg=color, insertbackground=color)
+
+    def change_bg_color(self, color):
+        self.configure(bg=color)
+        for tab_id in self.notebook.tabs():
+            frame = self.notebook.nametowidget(tab_id)
+            frame.config(bg=color)
+            for child in frame.winfo_children():
+                try:
+                    child.config(bg=color)
+                except tk.TclError:
+                    pass
 
 if __name__ == "__main__":
     app = SmartOneNote()
