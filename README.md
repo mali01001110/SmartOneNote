@@ -44,6 +44,7 @@ F1 : Red text
 F2 : Green text
 F3 : Blue text
 F4 : White text
+F5 : Black text
 
 Usage
 -----
@@ -110,6 +111,7 @@ F1 : Texte rouge
 F2 : Texte vert
 F3 : Texte bleu
 F4 : Texte blanc
+F5 : Texte noir
 
 Utilisation
 -----------
