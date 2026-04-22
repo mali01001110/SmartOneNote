@@ -24,7 +24,11 @@ class SmartOneNote(tk.Tk):
         self.notebook.pack(expand=1, fill="both")
         self.new_tab()
 
+        # ===========================
+        # MENU BAR
+        # ===========================
         menu_bar = tk.Menu(self, bg="black", fg="white")
+        
         file_menu = tk.Menu(menu_bar, tearoff=0, bg="black", fg="white")
         file_menu.add_command(label="Open", command=self.open_file, accelerator="Ctrl+O")
         file_menu.add_command(label="Save", command=self.save_file, accelerator="Ctrl+S")
@@ -35,6 +39,7 @@ class SmartOneNote(tk.Tk):
 
         tab_menu = tk.Menu(menu_bar, tearoff=0, bg="black", fg="white")
         tab_menu.add_command(label="New Tab", command=self.new_tab, accelerator="Ctrl+N")
+        tab_menu.add_command(label="Close Tab", command=self.close_current_tab, accelerator="Ctrl+F4")
         menu_bar.add_cascade(label="Tab", menu=tab_menu)
 
         style_menu = tk.Menu(menu_bar, tearoff=0, bg="black", fg="white")
@@ -61,6 +66,9 @@ class SmartOneNote(tk.Tk):
 
         self.config(menu=menu_bar)
 
+        # ===========================
+        # KEYBOARD SHORTCUTS
+        # ===========================
         self.bind_all("<Control-n>", lambda e: self.new_tab())
         self.bind_all("<Control-o>", lambda e: self.open_file())
         self.bind_all("<Control-s>", lambda e: self.save_file())
@@ -85,6 +93,11 @@ class SmartOneNote(tk.Tk):
 
         # Bind right click on tabs
         self.notebook.bind("<Button-3>", self.show_tab_context_menu)
+
+        # ===========================
+        # KEYBOARD SHORTCUT FOR TAB CLOSING
+        # ===========================
+        self.bind_all("<Control-F4>", lambda e: self.close_current_tab())
 
     def current_text_area(self):
         current_tab = self.notebook.select()
