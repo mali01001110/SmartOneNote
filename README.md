@@ -35,6 +35,7 @@ Features
 Keyboard Shortcuts
 ------------------
 Ctrl+N : New tab
+Ctrl+F4 : Close Tab
 Ctrl+O : Open file
 Ctrl+S : Save
 Ctrl+Shift+S : Save As
@@ -100,6 +101,7 @@ Fonctionnalités
 Raccourcis clavier
 ------------------
 Ctrl+N : Nouveau onglet
+Ctrl+F4 : Fermer onglet
 Ctrl+O : Ouvrir fichier
 Ctrl+S : Sauvegarder
 Ctrl+Shift+S : Sauvegarder sous
